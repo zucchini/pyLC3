@@ -1,0 +1,18 @@
+language: python
+python:
+- 3.6
+- 3.5
+- 3.4
+- 2.7
+install: pip install -U tox-travis
+script: tox
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: zucchini
+  password:
+    secure: r9KCEuBosKx30hfUWVms/+LNSIibiC9+yh+Iy5QHx8IZfNnRlwis/kPoIR+VvpHHBV4wDJjLWrWPBblnLLJq/mWxakmuO1pstbu8WlOfIOOUchvX17KV9E2YOpsDWDbdRFl4w9SF44QVL8U2BOfY7AfADUCPedQwQ2zexPDik09qJsEhBpRaK4jbkD/a59LlcszWAE0FitNzZFBVOPDpw9Y6aSWGiGVO01TtghlfATIsd9jYhFJVh8MymgATU1UCE/ip53fHuNsuWcAyEgI/3NcSTlooQ3cSiEbqIV4CNojFPTwv64N0goUmqt4a/RsY0IBO/f2op/MGH2szmkCaWv4BJVS9jrxk3d70VT93EsKY3T7WfUm+rWD6+mXSYalMEO38cIZv/vx0C4fFUDAmnuj6KVBKKdymyC1ewjRoj49AIOgFuKiXVEtnDUbNmfLXlPLU6QAhnVHEoK6ONYbCDsVXZQq5CxzBcPiektQUuyYTs7ytQqNiAp3mbThbg/jckL49bFvX5VQ2LgCWCaScvcupTlJQ5MLosGAoCHXJJ1asb3Ck24A9yPie+rovlezhWF+b3GYdvQ8+qUBw19d03pZ9DYLuC2s5a4BWscKLjnLd6fqkYeX7fOw73KM42IB9OhI3tfOeOp4+FEDFl/B518ovblQ1Nn9zP+9qnmXAgjE=
+  on:
+    tags: true
+    repo: zucchini/pyLC3
+    python: 3.6
