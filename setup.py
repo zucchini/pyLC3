@@ -3,7 +3,8 @@
 
 """The setup script."""
 
-from setuptools import setup, find_packages
+from skbuild import setup
+from setuptools import find_packages
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -18,6 +19,14 @@ setup_requirements = [ ]
 test_requirements = [ ]
 
 setup(
+    cmake_args=[
+        '-DENABLE_COMPLX=OFF',
+        '-DENABLE_AS2OBJ=OFF',
+        '-DENABLE_LC3EDIT=OFF',
+        '-DENABLE_LC3RUNNER=OFF',
+        '-DENABLE_PYLC3=ON',
+    ],
+    cmake_source_dir='pyLC3/complx/',
     author="Zucchini Team",
     author_email='team@zucc.io',
     classifiers=[
