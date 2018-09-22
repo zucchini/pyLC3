@@ -1,12 +1,9 @@
 language: python
 python:
 - 2.7
-before_install:
+install:
     - sudo apt-get install -y libboost-python-dev
-    - pip install scikit-build
-    - git clone https://github.com/skyman/complx.git
-    - cd complx && git checkout tags/pylc3-v0.1.0 && cd ..
-install: pip install -U tox-travis
+    - pip install -U tox-travis
 script: tox
 deploy:
   provider: pypi
