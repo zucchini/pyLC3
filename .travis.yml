@@ -3,6 +3,7 @@ python:
 - 2.7
 install:
     - sudo apt-get install -y libboost-python-dev
+    - sudo apt-get install -y castxml
     - pip install -r requirements_dev.txt
 script: python setup.py install
 test: python setup.py test
