@@ -23,10 +23,18 @@ Python bindings for liblc3, the LC-3 emulator library behind complx.
 * Documentation: https://pyLC3.readthedocs.io.
 
 
-Features
+Installation
 --------
 
-* TODO
+* Install python, boost-python (should be compiled with your version of Python) and castxml.
+```
+$ sudo apt-get install -y build-essential g++cmake libboost-test-dev libboost-python-dev libglib2.0-dev castxml python-pip
+```
+
+* Install this package from PyPI:
+```
+$ pip install pyLC3
+```
 
 Credits
 -------
