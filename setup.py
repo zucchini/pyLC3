@@ -35,7 +35,7 @@ setup(
         '-DENABLE_LC3RUNNER=OFF',
         '-DENABLE_PYLC3=ON',
     ],
-    cmake_source_dir='pyLC3/complx/',
+    cmake_source_dir='complx/',
     author="Zucchini Team",
     author_email='team@zucc.io',
     classifiers=[
