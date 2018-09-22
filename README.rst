@@ -27,14 +27,10 @@ Installation
 --------
 
 * Install python, boost-python (should be compiled with your version of Python) and castxml.
-```
-$ sudo apt-get install -y build-essential g++cmake libboost-test-dev libboost-python-dev libglib2.0-dev castxml python-pip
-```
+``$ sudo apt-get install -y build-essential g++cmake libboost-test-dev libboost-python-dev libglib2.0-dev castxml python-pip``
 
 * Install this package from PyPI:
-```
-$ pip install pyLC3
-```
+``$ pip install pyLC3``
 
 Credits
 -------
