@@ -1,7 +1,7 @@
 language: python
 python:
 - 2.7
-before-install:
+before_install:
     - apt-get install -y libboost-python-dev
     - pip install scikit-build
     - git clone https://github.com/skyman/complx.git
