@@ -4,11 +4,10 @@ python:
 - 2.7
 install:
     - sudo apt-get install -y libboost-python-dev
-    - sudo apt-get install -y castxml
-    - pip install -r requirements_dev.txt
     - wget https://midas3.kitware.com/midas/download/item/318227 -O castxml.tar.gz
     - tar xf castxml.tar.gz
     - sudo cp -R castxml/* /usr/
+    - pip install -r requirements_dev.txt
 script: python setup.py install
 test: python setup.py test
 deploy:
