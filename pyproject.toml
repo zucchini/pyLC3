@@ -1,2 +1,23 @@
 [build-system]
 requires = ["setuptools", "wheel", "scikit-build", "cmake", "ninja"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py27, flake8
+
+[travis]
+python =
+    2.7: py27
+
+[testenv:flake8]
+basepython = python
+deps = flake8
+commands = flake8 pyLC3
+
+[testenv]
+setenv =
+    PYTHONPATH = {toxinidir}
+
+commands = python setup.py test
+"""
