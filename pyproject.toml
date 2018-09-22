@@ -19,5 +19,6 @@ commands = flake8 pyLC3
 setenv =
     PYTHONPATH = {toxinidir}
 
+deps = scikit-build
 commands = python setup.py test
 """
