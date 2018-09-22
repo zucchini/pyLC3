@@ -1,9 +1,7 @@
 language: python
 python:
-- 3.6
-- 3.5
-- 3.4
 - 2.7
+before-install: apt-get install -y libboost-python-dev
 install: pip install -U tox-travis
 script: tox
 deploy:
@@ -15,4 +13,4 @@ deploy:
   on:
     tags: true
     repo: zucchini/pyLC3
-    python: 3.6
+    python: 2.7

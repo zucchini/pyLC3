@@ -12,9 +12,18 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = [
+    "enum34==1.1.6",
+    "six==1.11.0",
+    "terminaltables==3.1.0",
+    "unittest-xml-reporting==2.2.0"
+]
 
-setup_requirements = [ ]
+setup_requirements = [
+    "cmake",
+    "pygccxml==1.9.1",
+    "pyplusplus==1.8.1"
+]
 
 test_requirements = [ ]
 
