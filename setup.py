@@ -16,7 +16,6 @@ requirements = [
     "enum34==1.1.6",
     "six==1.11.0",
     "terminaltables==3.1.0",
-    "unittest-xml-reporting==2.2.0"
 ]
 
 setup_requirements = [
