@@ -34,6 +34,7 @@ setup(
         '-DENABLE_LC3EDIT=OFF',
         '-DENABLE_LC3RUNNER=OFF',
         '-DENABLE_PYLC3=ON',
+        '-DCMAKE_INSTALL_LIBDIR=pyLC3.
     ],
     cmake_source_dir='complx/',
     author="Zucchini Team",
