@@ -36,7 +36,7 @@ Installation
 ``$ sudo ldconfig``
 
 * Import it in Python:
-``from pyLC3 import
+``from pyLC3 import LC3UnitTestCase``
 
 Credits
 -------
