@@ -30,7 +30,13 @@ Installation
 ``$ sudo apt-get install -y build-essential g++cmake libboost-test-dev libboost-python-dev libglib2.0-dev castxml python-pip``
 
 * Install this package from PyPI:
-``$ pip install pyLC3``
+``$ sudo pip install pyLC3``
+
+* Run ldconfig
+``$ sudo ldconfig``
+
+* Import it in Python:
+``from pyLC3 import
 
 Credits
 -------

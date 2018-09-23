@@ -8,4 +8,4 @@ __version__ = '0.2.4'
 
 import pylc3
 from .cli import comp
-from .unittest import lc3_unit_test_case
+from .unittests.lc3_unit_test_case import LC3UnitTestCase
