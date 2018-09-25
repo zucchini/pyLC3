@@ -63,6 +63,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/zucchini/pyLC3',
-    version='4.17.0',
+    version='0.4.0',
     zip_safe=False,
 )
