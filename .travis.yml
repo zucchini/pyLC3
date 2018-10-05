@@ -19,4 +19,4 @@ deploy:
   on:
     tags: true
     repo: zucchini/pyLC3
-    python: 2.7
+    python: 3.6
