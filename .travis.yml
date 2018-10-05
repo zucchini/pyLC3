@@ -1,7 +1,7 @@
 dist: trusty
 language: python
 python:
-- 3.7
+- 3.6
 install:
     - sudo apt-get install -y libboost-all-dev
     - wget https://midas3.kitware.com/midas/download/item/318227 -O castxml.tar.gz
