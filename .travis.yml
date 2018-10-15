@@ -7,8 +7,6 @@ install:
     - sudo apt-get update -qq
     - sudo apt-get install -y libboost-test-dev castxml python-pip libpython-dev libboost-python-dev libboost-serialization-dev 
     - sudo pip install wheel setuptools unittest2 pygccxml pyplusplus terminaltables
-    - sudo pip install -r pylc3/requirements.txt
-    - sudo pip install -r pylc3/requirements-build.txt
     - sudo pip install -r requirements_dev.txt
 script: python setup.py install
 test: python setup.py test
