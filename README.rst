@@ -16,7 +16,7 @@ pyLC3
 
 
 
-Python bindings for liblc3, the LC-3 emulator library behind complx.
+Python bindings for liblc3, the LC-3 simulator library behind complx.
 
 
 * Free software: GNU General Public License v3
