@@ -51,7 +51,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="Python bindings for liblc3, the LC-3 emulator library behind complx.",
+    description="Python bindings for liblc3, the LC-3 simulator library behind complx.",
     install_requires=requirements,
     license="GNU General Public License v3",
     long_description=readme + '\n\n' + history,
