@@ -3,11 +3,11 @@ language: python
 python:
 - 2.7
 install:
-    - apt-get update -qq
-    - apt-get install -y libboost-test-dev castxml python-pip libpython-dev libboost-python-dev libboost-serialization-dev 
-    - pip install wheel setuptools unittest2 pygccxml pyplusplus terminaltables
-    - pip install -r requirements_dev.txt
-script: python setup.py install
+    - sudo apt-get update -qq
+    - sudo apt-get install -y libboost-test-dev castxml python-pip libpython-dev libboost-python-dev libboost-serialization-dev 
+    - pip install --user wheel setuptools unittest2 pygccxml pyplusplus terminaltables
+    - pip install --user -r requirements_dev.txt
+script: python setup.py install --user
 test: python setup.py test
 deploy:
   provider: pypi
