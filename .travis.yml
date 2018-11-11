@@ -1,15 +1,14 @@
-sudo: required
 dist: xenial
 language: python
 python:
-- 2.7
+- 3.6
 install:
-    - sudo apt-get update -qq
-    - sudo apt-get install -y libboost-test-dev castxml python-pip libpython-dev libboost-python-dev libboost-serialization-dev 
-    - sudo pip install wheel setuptools unittest2 pygccxml pyplusplus terminaltables
-    - sudo pip install -r requirements_dev.txt
-script: sudo python setup.py install
-test: sudo python setup.py test
+    - apt-get update -qq
+    - apt-get install -y libboost-test-dev castxml python-pip libpython-dev libboost-python-dev libboost-serialization-dev 
+    - pip install wheel setuptools unittest2 pygccxml pyplusplus terminaltables
+    - pip install -r requirements_dev.txt
+script: python setup.py install
+test: python setup.py test
 deploy:
   provider: pypi
   distributions: sdist
@@ -19,4 +18,4 @@ deploy:
   on:
     tags: true
     repo: zucchini/pyLC3
-    python: 2.7
+    python: 3.6
