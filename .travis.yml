@@ -1,7 +1,7 @@
 dist: xenial
 language: python
 python:
-- 3.6
+- 2.7
 install:
     - apt-get update -qq
     - apt-get install -y libboost-test-dev castxml python-pip libpython-dev libboost-python-dev libboost-serialization-dev 
@@ -18,4 +18,4 @@ deploy:
   on:
     tags: true
     repo: zucchini/pyLC3
-    python: 3.6
+    python: 2.7
