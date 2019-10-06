@@ -31,7 +31,6 @@ setup(
         '-DENABLE_COMPLX=OFF',
         '-DENABLE_AS2OBJ=OFF',
         '-DENABLE_LC3EDIT=OFF',
-        '-DENABLE_LC3RUNNER=OFF',
         '-DENABLE_PYLC3=ON',
         '-DCMAKE_INSTALL_LIBDIR=pyLC3'
     ],

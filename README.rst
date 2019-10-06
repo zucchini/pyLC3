@@ -24,21 +24,26 @@ Python bindings for liblc3, the LC-3 simulator library behind complx.
 
 
 Installation
---------
+------------
 
 * Install python, boost-python (should be compiled with your version of Python) and castxml.
+
 ``$ sudo apt-get install -y build-essential g++ cmake libboost-all-dev libglib2.0-dev castxml python-pip``
 
 * Install skbuild
+
 ``$ sudo pip install scikit-build``
 
 * Install this package from PyPI:
+
 ``$ sudo pip install pyLC3``
 
 * Run ldconfig
+
 ``$ sudo ldconfig``
 
 * Import it in Python:
+
 ``from pyLC3 import LC3UnitTestCase``
 
 Credits
