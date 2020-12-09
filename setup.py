@@ -13,15 +13,15 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    "enum34==1.1.6",
-    "six==1.11.0",
+    "enum34==1.1.10",
+    "six==1.15.0",
     "terminaltables==3.1.0",
 ]
 
 setup_requirements = [
     "cmake",
     "pygccxml==1.9.1",
-    "pyplusplus==1.8.1"
+    "pyplusplus==1.8.4"
 ]
 
 test_requirements = [ ]
@@ -42,13 +42,12 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     description="Python bindings for liblc3, the LC-3 simulator library behind complx.",
     install_requires=requirements,
