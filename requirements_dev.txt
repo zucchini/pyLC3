@@ -9,5 +9,5 @@ Sphinx==1.7.1
 twine==1.10.0
 scikit-build==0.8.1
 cmake
-pygccxml==1.9.1
-pyplusplus==1.8.1
+pygccxml==2.0.1
+pyplusplus==1.8.4
