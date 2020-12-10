@@ -4,7 +4,7 @@
 
 __author__ = """Zucchini Team"""
 __email__ = 'team@zucc.io'
-__version__ = '0.11.2'
+__version__ = '0.11.3'
 
 from . import pylc3
 from .cli import comp
